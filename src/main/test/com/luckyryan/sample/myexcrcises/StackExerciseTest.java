@@ -116,14 +116,18 @@ public class StackExerciseTest extends TestCase {
 
             assertTrue("After popping element from stack with one element it must become empty",
                     stackExercise.isEmpty());
-            assertEquals("Top element and popped element of stack must be the same",topElement, poppedElement);
+            assertEquals("Top element and popped element of stack must be the same", topElement, poppedElement);
 
         } catch (StackEmptyException e) {
             fail("Stack is not empty. This exception is invalid");
         }
     }
 
-    public void testGit(){
+    public void testGit() {
+
+    }
+
+    public void testThirdFork() {
 
     }
 
