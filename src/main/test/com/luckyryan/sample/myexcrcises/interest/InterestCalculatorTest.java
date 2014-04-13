@@ -17,6 +17,7 @@ import java.util.Date;
 @RunWith(MockitoJUnitRunner.class)
 public class InterestCalculatorTest extends TestCase {
     InterestCalculator calculator = null;
+
     @Before
     public void setUp() throws Exception {
         calculator = new InterestCalculatorImpl();
@@ -28,7 +29,7 @@ public class InterestCalculatorTest extends TestCase {
 
     }
 
-    public void testCalculateNullInput(){
+    public void testCalculateNullInput() {
         try {
             calculator.calculate(null, null);
             fail("passing null as both parameter must throw NullPointerException");
@@ -43,10 +44,10 @@ public class InterestCalculatorTest extends TestCase {
 
 
     @Test
-    public void testCalculateFromAfterTwoVerifyThrowsInvalidParamException(){
+    public void testCalculateFromAfterTwoVerifyThrowsInvalidParamException() {
         long currentTime = System.currentTimeMillis();
         Date from = new Date(currentTime);
-        Date to = new Date(currentTime - (24*60*60*1000) );
+        Date to = new Date(currentTime - (24 * 60 * 60 * 1000));
         try {
             calculator.calculate(from, to);
             fail("When \'to\' is before \'from\', method must throw InvalidParameterException");
@@ -82,11 +83,16 @@ public class InterestCalculatorTest extends TestCase {
 //    }
 
 
-
     @Test
-    public void testCalculateNumberOfDays(){
+    public void testCalculateNumberOfDays() {
         InterestCalculatorImpl testCalculator = new InterestCalculatorImpl();
 //        testCalculator.getNumberOfBusinessDays()
     }
 
+
+    public void testMultipleChangeInGit() {
+
+
+        // this is to test multiple file change in git
+    }
 }
