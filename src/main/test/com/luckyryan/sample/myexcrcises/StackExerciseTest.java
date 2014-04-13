@@ -123,11 +123,16 @@ public class StackExerciseTest extends TestCase {
         }
     }
 
-    public void testGit() {
 
+    public void testGit() {
+        // no body is required.
+        // This is only to check how changes work in git
     }
 
     public void testThirdFork() {
+
+        // no body is required.
+        // This is only to check how changes work in git
 
     }
 
